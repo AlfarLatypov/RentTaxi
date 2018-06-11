@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentTaxi", "RentTaxi\RentTaxi.csproj", "{59111CAF-61F7-4B2E-96F7-61F91531D1B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentTaxi.LIB", "RentTaxi.LIB\RentTaxi.LIB.csproj", "{2AEEC824-0619-46EE-B98B-6EF2DB81478B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59111CAF-61F7-4B2E-96F7-61F91531D1B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59111CAF-61F7-4B2E-96F7-61F91531D1B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59111CAF-61F7-4B2E-96F7-61F91531D1B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59111CAF-61F7-4B2E-96F7-61F91531D1B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AEEC824-0619-46EE-B98B-6EF2DB81478B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AEEC824-0619-46EE-B98B-6EF2DB81478B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AEEC824-0619-46EE-B98B-6EF2DB81478B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AEEC824-0619-46EE-B98B-6EF2DB81478B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
