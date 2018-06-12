@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace RentTaxi.AdminModule
 {
+    public enum Gender { Male, fmale}
    public class TBL_User
     {
         public int UserId { get; set; }
@@ -13,6 +14,8 @@ namespace RentTaxi.AdminModule
         public string Password { get; set; }
         public string Email { get; set; }
         public int Department { get; set; }
+        public DateTime DOB { get; set; }
+        public Gender Gender { get; set; }
         List<Tbl_Roles> Roles;
 
     }

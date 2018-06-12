@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RentTaxi.LIB;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,7 +24,20 @@ namespace RentTaxi
         public MainWindow()
         {
             InitializeComponent();
-            BaseGrid.Background = new ImageSource();
+          //  BaseGrid.Background = new ImageSource();
+        }
+
+        private void btnLogOn_Click(object sender, RoutedEventArgs e)
+        {
+            ServicesXML service = new ServicesXML("users.xml");
+            if(service.GetUser(txblogin.Text, txbpassword.Password))
+            {
+                adminWindow aw = new adminWindow();
+                aw.Show();
+                this.Close();
+            }
+
+
         }
     }
 }

@@ -49,10 +49,10 @@ namespace RentTaxi.LIB
             return xmlDoc;
         }
 
-        public XmlElement GetUser(string login, string password)
+        public bool GetUser(string login, string password)
         {
 
-            return null;
+            return true;
         }
 
     }
