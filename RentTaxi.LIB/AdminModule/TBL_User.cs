@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 namespace RentTaxi.AdminModule
 {
     public enum Gender { Male, fmale}
+
+    [Serializable]
    public class TBL_User
     {
         public int UserId { get; set; }
@@ -19,7 +21,7 @@ namespace RentTaxi.AdminModule
         List<Tbl_Roles> Roles;
 
     }
-
+    [Serializable]
     public class Tbl_Roles
     {
         public int RoleId { get; set; }

@@ -8,7 +8,7 @@
       d:DesignHeight="300" d:DesignWidth="300"
       Title="AddUser_Page">
 
-    <Grid>
+    <Grid Margin="15">
        
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
