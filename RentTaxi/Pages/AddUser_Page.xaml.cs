@@ -50,8 +50,8 @@ namespace RentTaxi.Pages
                 ErrorMessage.Foreground = new SolidColorBrush(Colors.Green);
                 ErrorMessage.Content = temp;
                 Thread.Sleep(3000);
-                adminWindow aw = new adminWindow();
-                aw.mainFrame.Source = new Uri("Pages/ListUsersPage.xaml", UriKind.RelativeOrAbsolute); 
+               // adminWindow aw = new adminWindow();
+                adminWindow.mf.Source = new Uri("Pages/ListUsersPage.xaml", UriKind.RelativeOrAbsolute); 
 
             }
 

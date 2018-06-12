@@ -82,6 +82,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\User_InfoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pages\AddUser_Page.xaml.cs">
@@ -89,6 +93,9 @@
     </Compile>
     <Compile Include="Pages\ListUsersPage.xaml.cs">
       <DependentUpon>ListUsersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\User_InfoPage.xaml.cs">
+      <DependentUpon>User_InfoPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -125,7 +132,6 @@
       <Name>RentTaxi.LIB</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

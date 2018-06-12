@@ -11,29 +11,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace RentTaxi
+namespace RentTaxi.Pages
 {
     /// <summary>
-    /// Interaction logic for adminWindow.xaml
+    /// Interaction logic for User_InfoPage.xaml
     /// </summary>
-    public partial class adminWindow : Window
+    public partial class User_InfoPage : Page
     {
-        public static Frame mf;
-        public adminWindow()
+        public User_InfoPage()
         {
             InitializeComponent();
-            mf = mainFrame;
-        }
-
-        private void miAddUser_Click(object sender, RoutedEventArgs e)
-        {
-            mainFrame.Source = new Uri("Pages/AddUser_Page.xaml", UriKind.RelativeOrAbsolute);
-        }
-
-        private void userInfo_Click(object sender, RoutedEventArgs e)
-        {
             ServicesXML sx = new ServicesXML();
             sx.getUser();
         }

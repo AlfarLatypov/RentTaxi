@@ -16,6 +16,7 @@
             <MenuItem Header="Пользователи">
                 <MenuItem Header="Список" x:Name="miListUsers"></MenuItem>
                 <MenuItem Header="Добавить" x:Name="miAddUser" Click="miAddUser_Click"></MenuItem>
+                <MenuItem Header="Информация о пользователе" x:Name="userInfo" Click="userInfo_Click"></MenuItem>
             </MenuItem>
             
         </Menu>

@@ -10,13 +10,13 @@ using System.Xml.Serialization;
 
 namespace RentTaxi.LIB
 {
-   public class ServicesXML
+    public class ServicesXML
     {
         public ServicesXML()
         {
 
         }
-       public string path { get; set; }
+        public string path { get; set; }
         public ServicesXML(string path)
         {
             this.path = path;
@@ -25,7 +25,7 @@ namespace RentTaxi.LIB
         public void l(string path)
         {
 
-           
+
             using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
             {
 
@@ -34,8 +34,8 @@ namespace RentTaxi.LIB
             }
         }
 
-      public XmlDocument GetDocument()
-        { 
+        public XmlDocument GetDocument()
+        {
             XmlDocument xmlDoc = new XmlDocument();
             //проверить есть ли документ
             FileInfo info = new FileInfo(path);
@@ -64,12 +64,12 @@ namespace RentTaxi.LIB
         {
             try
             {
-                           
-            XmlSerializer formater = new XmlSerializer(typeof(TBL_User));
-            using (FileStream fs = new FileStream("user/" + user.UserName + ".xml", FileMode.OpenOrCreate))
-            {
-                formater.Serialize(fs, user);
-            }
+
+                XmlSerializer formater = new XmlSerializer(typeof(TBL_User));
+                using (FileStream fs = new FileStream("user/" + user.UserName + ".xml", FileMode.OpenOrCreate))
+                {
+                    formater.Serialize(fs, user);
+                }
                 message = "Пользователь добавлен!";
                 return true;
             }
@@ -78,8 +78,24 @@ namespace RentTaxi.LIB
                 message = ex.Message;
                 return false;
             }
-           
+
         }
 
+        public List<TBL_User> getUser()
+        {
+            List<TBL_User> users = new List<TBL_User>();
+            DirectoryInfo di = new DirectoryInfo("user");
+            XmlSerializer formater = new XmlSerializer(typeof(TBL_User));
+            foreach (FileInfo item in di.GetFiles())
+            {
+                using (FileStream fs = new FileStream(item.FullName, FileMode.Open))
+                {
+                    users.Add((TBL_User)formater.Deserialize(fs));
+                }
+                //
+            }
+            return users;
+        }
     }
 }
+
